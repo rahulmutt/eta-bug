@@ -1,0 +1,824 @@
+generating (rec) [$wa1_rF1JX]
+creating new closure...$LrF1JX$wa1
+StgCase sat_sF1KX Prim Word#
+StgOpApp uncheckedShiftRL# [ww1_sF1KP, ww_sF1KO] Word#
+StgCase sat_sF1KY Prim Word#
+StgOpApp and# [sat_sF1KX, __word 15] Word#
+StgCase sat_sF1KZ Prim Int#
+StgOpApp word2Int# [sat_sF1KY] Int#
+StgCase a1_sF1KW Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1KZ] Word#
+StgCase sat_sF1L1 Prim Word#
+StgOpApp uncheckedShiftRL# [ww2_sF1KS, ww_sF1KO] Word#
+StgCase sat_sF1L2 Prim Word#
+StgOpApp and# [sat_sF1L1, __word 15] Word#
+StgCase sat_sF1L3 Prim Int#
+StgOpApp word2Int# [sat_sF1L2] Int#
+StgCase b1_sF1L0 Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1L3] Word#
+StgCase lwild_sF1L4 Prim Int#
+StgLet sat_sF1L6
+creating new closure...sat_sF1L6
+Free variables  ww1_sF1KP,w_sF1KQ,w1_sF1KR
+StgCase dt5_sF1L5 Alg []
+StgApp w_sF1KQ []
+cgIdApp: EnterIt
+StgConApp Leaf [ww1_sF1KP, dt5_sF1L5, w1_sF1KR]
+StgCase ds_sF1L7 UbxTup 2
+StgOpApp newSmallArray# [2, sat_sF1L6, w4_sF1KV] (# State# s_a5KLC,
+                                                    SmallMutableArray#
+                                                      s_a5KLC (HashMap String v_X5KL8) #)
+StgCase sat_sF1LD Prim Word#
+StgOpApp uncheckedShiftRL# [ww2_sF1KS, ww_sF1KO] Word#
+StgCase sat_sF1LE Prim Word#
+StgOpApp and# [sat_sF1LD, __word 15] Word#
+StgCase sat_sF1LF Prim Int#
+StgOpApp word2Int# [sat_sF1LE] Int#
+StgCase sat_sF1LA Prim Word#
+StgOpApp uncheckedShiftRL# [ww1_sF1KP, ww_sF1KO] Word#
+StgCase sat_sF1LB Prim Word#
+StgOpApp and# [sat_sF1LA, __word 15] Word#
+StgCase sat_sF1LC Prim Int#
+StgOpApp word2Int# [sat_sF1LB] Int#
+StgCase lwild1_sF1LG Prim Int#
+StgLet sat_sF1LI
+creating new closure...sat_sF1LI
+Free variables  ww2_sF1KS,w2_sF1KT,w3_sF1KU
+StgCase dt5_sF1LH Alg []
+StgApp w2_sF1KT []
+cgIdApp: EnterIt
+StgConApp Leaf [ww2_sF1KS, dt5_sF1LH, w3_sF1KU]
+StgCase s'_sF1LJ Prim State#
+StgOpApp writeSmallArray# [ipv1_sF1L9, 0, sat_sF1LI,
+                           ipv_sF1L8] State# s_a5KLC
+StgCase ds5_sF1LK UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv1_sF1L9, s'_sF1LJ] (# State#
+                                                             s_a5KLC,
+                                                           SmallArray# (HashMap String v_X5KL8) #)
+StgCase sat_sF1LN Prim Word#
+StgOpApp or# [a1_sF1KW, b1_sF1L0] Word#
+StgLet sat_sF1LO
+StgConApp (#,#) [ipv6_sF1LL, sat_sF1LO]
+StgLet sat_sF1LQ
+creating new closure...sat_sF1LQ
+Free variables  ww2_sF1KS,w2_sF1KT,w3_sF1KU
+StgCase dt5_sF1LP Alg []
+StgApp w2_sF1KT []
+cgIdApp: EnterIt
+StgConApp Leaf [ww2_sF1KS, dt5_sF1LP, w3_sF1KU]
+StgCase s'_sF1LR Prim State#
+StgOpApp writeSmallArray# [ipv1_sF1L9, 1, sat_sF1LQ,
+                           ipv_sF1L8] State# s_a5KLC
+StgCase ds5_sF1LS UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv1_sF1L9, s'_sF1LR] (# State#
+                                                             s_a5KLC,
+                                                           SmallArray# (HashMap String v_X5KL8) #)
+StgCase sat_sF1LV Prim Word#
+StgOpApp or# [a1_sF1KW, b1_sF1L0] Word#
+StgLet sat_sF1LW
+StgConApp (#,#) [ipv6_sF1LT, sat_sF1LW]
+StgCase sat_sF1LX Prim Int#
+StgOpApp +# [ww_sF1KO, 4] Int#
+StgCase ds3_sF1LY UbxTup 2
+StgApp $wa1_rF1JX [sat_sF1LX, ww1_sF1KP, w_sF1KQ, w1_sF1KR,
+                   ww2_sF1KS, w2_sF1KT, w3_sF1KU, w4_sF1KV]
+cgIdApp: DirectEntry
+StgCase ds4_sF1M1 UbxTup 2
+StgOpApp newSmallArray# [1, ipv3_sF1M0, ipv2_sF1LZ] (# State#
+                                                         s_a5KLC,
+                                                       SmallMutableArray#
+                                                         s_a5KLC (HashMap String v_X5KL8) #)
+StgCase ds5_sF1M4 UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv5_sF1M3, ipv4_sF1M2] (# State#
+                                                               s_a5KLC,
+                                                             SmallArray# (HashMap String v_X5KL8) #)
+StgLet sat_sF1M7
+StgConApp (#,#) [ipv6_sF1M5, sat_sF1M7]
+generating  a_rF1JY
+creating new closure...$LrF1JYa
+StgCase ww_sF1MA Alg ByteString
+StgApp w59_sF1M8 []
+cgIdApp: EnterIt
+StgApp $wa34 [$fBinary_Version_$s$fBinary_[], ww1_sF1MB, ww2_sF1MC,
+              ww3_sF1MD, ww4_sF1ME, w60_sF1M9]
+cgIdApp: DirectEntry
+generating (rec) [$fNFData_Config_go]
+creating new closure...$fNFData_Config_go
+StgCase wild_sF1MG Alg []
+StgApp ds_sF1MF []
+cgIdApp: EnterIt
+StgConApp () []
+StgCase ds1_sF1MJ Alg Char
+StgApp x_sF1MH []
+cgIdApp: EnterIt
+StgApp $fNFData_Config_go [xs_sF1MI]
+cgIdApp: JumpToIt
+generating  $fNFData_Config1
+creating new closure...$fNFData_Config1
+StgApp $fNFData_Config_go [eta_sF1ML]
+cgIdApp: DirectEntry
+generating  $saddOracle18
+creating new closure...$saddOracle18
+StgCase wild_sF1MN Alg Maybe
+StgApp ds_sF1MM []
+cgIdApp: EnterIt
+StgConApp () []
+StgApp $fNFData_Config_go [x_sF1MO]
+cgIdApp: DirectEntry
+generating (rec) [$saddOracle_go]
+creating new closure...$saddOracle_go
+StgCase wild_sF1MQ Alg []
+StgApp ds_sF1MP []
+cgIdApp: EnterIt
+StgConApp () []
+StgCase wild1_sF1MT Alg ()
+StgApp $fNFData_Config_go [x_sF1MR]
+cgIdApp: DirectEntry
+StgApp $saddOracle_go [xs_sF1MS]
+cgIdApp: JumpToIt
+generating  $saddOracle1
+creating new closure...$saddOracle1
+StgApp $saddOracle_go [eta_sF1MU]
+cgIdApp: DirectEntry
+generating  $fBinary_Config1
+creating new closure...$fBinary_Config1
+StgTick, tickish: get <src/Development/Shake/Config.hs:59:68-73>
+Emitting line number: 59
+StgCase ww_sF1MX Alg ByteString
+StgApp w59_sF1MV []
+cgIdApp: EnterIt
+StgApp $wa29 [$fBinary_Char, ww1_sF1MY, ww2_sF1MZ, ww3_sF1N0,
+              ww4_sF1N1, w60_sF1MW]
+cgIdApp: DirectEntry
+generating  lvl_rF1JZ
+creating new closure...$LrF1JZZlvl
+StgApp $fBinary_Maybe_$cputList [$fBinary_Version_$s$fBinary_[]]
+cgIdApp: DirectEntry
+generating  lvl1_rF1K0
+generating  lvl2_rF1K1
+creating new closure...$LrF1K1lvl2
+StgCase wild_sF1N3 Alg Maybe
+StgApp w_sF1N2 []
+cgIdApp: EnterIt
+StgApp lvl1_rF1K0 []
+cgIdApp: ReturnIt
+StgLet ds1_sF1N5
+creating new closure...ds1_sF1N5
+Free variables  x_sF1N4
+StgCase ww_sF1N6 UbxTup 2
+StgApp $wa8 [x_sF1N4]
+cgIdApp: DirectEntry
+StgApp ww2_sF1N8 []
+cgIdApp: SlowCall
+StgLet sat_sF1NH
+creating new closure...sat_sF1NH
+Free variables  ds1_sF1N5
+StgLet w60_sF1NA
+cgRhsStdThunk: w60_sF1NA --> local: True ObjectType (IClassName "eta/runtime/thunk/Ap2Upd") 3 local: True ObjectType (IClassName "eta/runtime/thunk/Ap2Upd") 3 w60_sF1NA [ds1_sF1N5,
+                                                                                                                                                                          eta_sF1N9]
+StgLet sat_sF1NG
+creating new closure...sat_sF1NG
+Free variables  w60_sF1NA
+StgCase ww_sF1ND Alg BufferRange
+StgApp w61_sF1NB []
+cgIdApp: EnterIt
+StgApp $wa24 [w60_sF1NA, ww1_sF1NE, ww2_sF1NF, w62_sF1NC]
+cgIdApp: DirectEntry
+StgApp sat_sF1NG []
+cgIdApp: ReturnIt
+StgConApp PairS [(), sat_sF1NH]
+generating  lvl3_rF1K2
+creating new closure...$LrF1K2lvl3
+StgCase wild_sF1NJ Alg Maybe
+StgApp ds_sF1NI []
+cgIdApp: EnterIt
+StgApp $fHashable_Either1 []
+cgIdApp: EnterIt
+StgApp $fHashable_[]_$s$chashWithSalt [distinguisher, a2_sF1NK]
+cgIdApp: DirectEntry
+generating (rec) [$wgo7_rF1K3]
+creating new closure...$LrF1K3$wgo7
+StgCase wild_sF1NO Alg []
+StgApp w2_sF1NL []
+cgIdApp: EnterIt
+StgConApp (#,#) [ww1_sF1NM, ww2_sF1NN]
+StgCase wild1_sF1NR Alg Char
+StgApp y_sF1NP []
+cgIdApp: EnterIt
+StgCase sat_sF1NW Prim Int#
+StgOpApp +# [ww2_sF1NN, 1] Int#
+StgCase sat_sF1NU Prim Int#
+StgOpApp ord# [c#_sF1NS] Int#
+StgCase sat_sF1NT Prim Int#
+StgOpApp *# [ww1_sF1NM, 16777619] Int#
+StgCase sat_sF1NV Prim Int#
+StgOpApp xorI# [sat_sF1NT, sat_sF1NU] Int#
+StgApp $wgo7_rF1K3 [ys_sF1NQ, sat_sF1NV, sat_sF1NW]
+cgIdApp: JumpToIt
+generating  lvl4_rF1K4
+creating new closure...$LrF1K4lvl4
+StgCase ww_sF1NZ Alg Int
+StgApp w_sF1NX []
+cgIdApp: EnterIt
+StgCase wild_sF1O1 Alg Maybe
+StgApp w1_sF1NY []
+cgIdApp: EnterIt
+StgCase sat_sF1O2 Prim Int#
+StgOpApp *# [ww1_sF1O0, 16777619] Int#
+StgConApp I# [sat_sF1O2]
+StgCase sat_sF1O4 Prim Int#
+StgOpApp *# [ww1_sF1O0, 16777619] Int#
+StgCase sat_sF1O5 Prim Int#
+StgOpApp xorI# [sat_sF1O4, 1431655765] Int#
+StgCase ww2_sF1O6 UbxTup 2
+StgApp $wgo7_rF1K3 [a2_sF1O3, sat_sF1O5, 0]
+cgIdApp: DirectEntry
+StgCase sat_sF1O9 Prim Int#
+StgOpApp *# [ww3_sF1O7, 16777619] Int#
+StgCase sat_sF1OA Prim Int#
+StgOpApp xorI# [sat_sF1O9, ww4_sF1O8] Int#
+StgConApp I# [sat_sF1OA]
+generating  $s$fHashable_[]1
+creating new closure...$s$fHashable_ZMZN1
+StgCase ww2_sF1OC Prim Int#
+StgApp $w$cliftHashWithSalt [$fHashable_[]_$s$chashWithSalt,
+                             142591788, eta_sF1OB]
+cgIdApp: DirectEntry
+StgConApp I# [ww2_sF1OC]
+generating  $s$fHashable_[]2
+creating new closure...$s$fHashable_ZMZN2
+StgCase ww_sF1OF Alg Int
+StgApp eta_sF1OD []
+cgIdApp: EnterIt
+StgCase ww2_sF1OH Prim Int#
+StgApp $w$cliftHashWithSalt [$fHashable_[]_$s$chashWithSalt,
+                             ww1_sF1OG, eta1_sF1OE]
+cgIdApp: DirectEntry
+StgConApp I# [ww2_sF1OH]
+generating (rec) [$wpoly_go]
+creating new closure...$wpoly_go
+StgCase k2_sF1OM Alg []
+StgApp w_sF1OI []
+cgIdApp: EnterIt
+StgCase lwild_sF1ON Prim Int#
+StgCase ds_sF1OO UbxTup 1
+StgOpApp indexSmallArray# [ww_sF1OJ, ww1_sF1OK] (# Leaf
+                                                     String v_X1D5A #)
+StgCase wild_sF1OQ Alg Leaf
+StgApp ipv3_sF1OP []
+cgIdApp: EnterIt
+StgCase wild1_sF1OT Alg Bool
+StgApp eqString [k2_sF1OM, kx_sF1OR]
+cgIdApp: DirectEntry
+StgCase sat_sF1OU Prim Int#
+StgOpApp +# [ww1_sF1OK, 1] Int#
+StgApp $wpoly_go [k2_sF1OM, ww_sF1OJ, sat_sF1OU, ww2_sF1OL]
+cgIdApp: JumpToIt
+StgConApp Just [v1_sF1OS]
+StgConApp Nothing []
+generating  lvl5_rF1K5
+creating new closure...$LrF1K5lvl5
+StgApp $fShow_Maybe_$cshowsPrec [$fShow_[]_$s$fShow_[]1, shows18,
+                                 eta_B1]
+cgIdApp: DirectEntry
+generating  $s$fShow_Maybe1
+creating new closure...$s$fShow_Maybe1
+StgApp showList__ [lvl5_rF1K5, eta_sF1OV, eta1_sF1OW]
+cgIdApp: DirectEntry
+generating  lvl6_rF1K6
+generating  lvl7_rF1K7
+creating new closure...$LrF1K7lvl7
+StgCase wild_sF1OY Alg Maybe
+StgApp x_sF1OX []
+cgIdApp: EnterIt
+StgApp $fShow_Maybe3 []
+cgIdApp: EnterIt
+StgLet sat_sF1P0
+creating new closure...sat_sF1P0
+Free variables  b1_sF1OZ
+StgApp showLitString [b1_sF1OZ, lvl6_rF1K6]
+cgIdApp: DirectEntry
+StgLet sat_sF1P1
+StgApp ++ [$fShow_Maybe1, sat_sF1P1]
+cgIdApp: DirectEntry
+generating  lvl8_rF1K8
+creating new closure...$LrF1K8lvl8
+StgApp $fShow_Maybe_$cshowsPrec [$fShow_[]_$s$fShow_[]1, eta_B2,
+                                 eta_B1]
+cgIdApp: DirectEntry
+generating  lvl9_rF1K9
+creating new closure...$LrF1K9lvl9
+StgCase wild_sF1P4 Alg Maybe
+StgApp a2_sF1P2 []
+cgIdApp: EnterIt
+StgCase wild1_sF1P5 Alg Maybe
+StgApp b_sF1P3 []
+cgIdApp: EnterIt
+StgConApp False []
+StgConApp True []
+StgCase wild1_sF1P8 Alg Maybe
+StgApp b_sF1P3 []
+cgIdApp: EnterIt
+StgConApp True []
+StgCase wild2_sF1PA Alg Bool
+StgApp eqString [a3_sF1P7, b1_sF1P9]
+cgIdApp: DirectEntry
+StgConApp True []
+StgConApp False []
+generating  lvl10_rF1KA
+creating new closure...$LrF1KAlvl10
+StgCase wild_sF1PD Alg Maybe
+StgApp ds_sF1PB []
+cgIdApp: EnterIt
+StgCase wild1_sF1PE Alg Maybe
+StgApp ds1_sF1PC []
+cgIdApp: EnterIt
+StgConApp True []
+StgConApp False []
+StgCase wild1_sF1PH Alg Maybe
+StgApp ds1_sF1PC []
+cgIdApp: EnterIt
+StgConApp False []
+StgApp eqString [a2_sF1PG, b1_sF1PI]
+cgIdApp: DirectEntry
+generating  $fShow_Config2
+creating new closure...$fShow_Config2
+StgApp unpackCString# ["Config "#]
+cgIdApp: DirectEntry
+generating  $fShow_ConfigKeys2
+creating new closure...$fShow_ConfigKeys2
+StgApp unpackCString# ["ConfigKeys "#]
+cgIdApp: DirectEntry
+generating  $s$fHashable_[]
+generating  $s$wupdateOrSnocWithKey
+creating new closure...$s$wupdateOrSnocWithKey
+StgCase k2_sF1PT Alg []
+StgApp w_sF1PO []
+cgIdApp: EnterIt
+StgCase lwild_sF1PU Prim Int#
+StgCase ds_sF1PV UbxTup 1
+StgOpApp indexSmallArray# [ww1_sF1PQ, ww2_sF1PR] (# Leaf
+                                                      String v_X1OPL #)
+StgCase wild_sF1PX Alg Leaf
+StgApp ipv3_sF1PW []
+cgIdApp: EnterIt
+StgCase wild1_sF1Q0 Alg Bool
+StgApp eqString [k2_sF1PT, kx_sF1PY]
+cgIdApp: DirectEntry
+StgCase sat_sF1Q1 Prim Int#
+StgOpApp +# [ww2_sF1PR, 1] Int#
+StgApp $wgo_sF1PN [k2_sF1PT, w4_sF1PP, ww1_sF1PQ, sat_sF1Q1,
+                   ww3_sF1PS]
+cgIdApp: JumpToIt
+StgCase sat_sF1Q2 Prim Int#
+StgOpApp sizeofSmallArray# [ww1_sF1PQ] Int#
+StgCase ds1_sF1Q3 UbxTup 2
+StgOpApp thawSmallArray# [ww1_sF1PQ, 0, sat_sF1Q2,
+                          realWorld#] (# State# RealWorld,
+                                         SmallMutableArray# RealWorld (Leaf String v_X1OPL) #)
+StgLet sat_sF1Q6
+cgRhsStdThunk: sat_sF1Q6 --> local: True ObjectType (IClassName "eta/runtime/thunk/Ap4Upd") 19 local: True ObjectType (IClassName "eta/runtime/thunk/Ap4Upd") 19 sat_sF1Q6 [w1_sF1PJ,
+                                                                                                                                                                            k2_sF1PT,
+                                                                                                                                                                            w4_sF1PP,
+                                                                                                                                                                            y_sF1PZ]
+StgLet sat_sF1Q7
+StgCase s'_sF1Q8 Prim State#
+StgOpApp writeSmallArray# [ipv5_sF1Q5, ww2_sF1PR, sat_sF1Q7,
+                           ipv4_sF1Q4] State# RealWorld
+StgCase ds2_sF1Q9 UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv5_sF1Q5, s'_sF1Q8] (# State#
+                                                             RealWorld,
+                                                           SmallArray# (Leaf String v_X1OPL) #)
+StgApp ipv7_sF1QB []
+cgIdApp: ReturnIt
+StgCase sat_sF1QC Prim Int#
+StgOpApp +# [ww3_sF1PS, 1] Int#
+StgCase ds_sF1QD UbxTup 2
+StgOpApp newSmallArray# [sat_sF1QC, undefinedElem,
+                         realWorld#] (# State# RealWorld,
+                                        SmallMutableArray# RealWorld (Leaf String v_X1OPL) #)
+StgCase s2_sF1QG Prim State#
+StgOpApp copySmallArray# [ww1_sF1PQ, 0, ipv4_sF1QF, 0, ww3_sF1PS,
+                          ipv3_sF1QE] State# RealWorld
+StgLet sat_sF1QH
+StgCase s'_sF1QI Prim State#
+StgOpApp writeSmallArray# [ipv4_sF1QF, ww3_sF1PS, sat_sF1QH,
+                           s2_sF1QG] State# RealWorld
+StgCase ds1_sF1QJ UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv4_sF1QF, s'_sF1QI] (# State#
+                                                             RealWorld,
+                                                           SmallArray# (Leaf String v_X1OPL) #)
+StgApp ipv6_sF1QL []
+cgIdApp: ReturnIt
+StgCase sat_sF1QM Prim Int#
+StgOpApp sizeofSmallArray# [ww_sF1PM] Int#
+StgApp $wgo_sF1PN [w2_sF1PK, w3_sF1PL, ww_sF1PM, 0, sat_sF1QM]
+cgIdApp: JumpToIt
+generating  lvl11_rF1KB
+creating new closure...$LrF1KBlvl11
+StgApp eta_sF1QO []
+cgIdApp: SlowCall
+generating (rec) [$sunsafeInsert_$s$wa, $wa]
+creating new closure...$sunsafeInsert_$s$wa
+StgCase k2_sF1QX Alg []
+StgApp sc1_sF1QR []
+cgIdApp: EnterIt
+StgCase sat_sF1QZ Prim Word#
+StgOpApp uncheckedShiftRL# [sc_sF1QQ, sc3_sF1QT] Word#
+StgCase sat_sF1R0 Prim Word#
+StgOpApp and# [sat_sF1QZ, __word 15] Word#
+StgCase sat_sF1R1 Prim Int#
+StgOpApp word2Int# [sat_sF1R0] Int#
+StgCase a1_sF1QY Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1R1] Word#
+StgCase wild_sF1R2 Prim Word#
+StgOpApp and# [sc4_sF1QU, a1_sF1QY] Word#
+StgCase sat_sF1R4 Prim Word#
+StgOpApp minusWord# [a1_sF1QY, __word 1] Word#
+StgCase sat_sF1R5 Prim Word#
+StgOpApp and# [sc4_sF1QU, sat_sF1R4] Word#
+StgCase sat_sF1R6 Prim Word#
+StgOpApp popCnt# [sat_sF1R5] Word#
+StgCase i#_sF1R3 Prim Int#
+StgOpApp word2Int# [sat_sF1R6] Int#
+StgCase ds3_sF1R7 UbxTup 1
+StgOpApp indexSmallArray# [sc5_sF1QV, i#_sF1R3] (# HashMap
+                                                     String v_X5KPY #)
+StgCase sat_sF1R9 Prim Int#
+StgOpApp +# [sc3_sF1QT, 4] Int#
+StgCase ds4_sF1RA UbxTup 2
+StgApp $wa [sc_sF1QQ, k2_sF1QX, sc2_sF1QS, sat_sF1R9, ipv2_sF1R8,
+            sc6_sF1QW]
+cgIdApp: DirectEntry
+StgCase ds5_sF1RD UbxTup 2
+StgOpApp unsafeThawSmallArray# [sc5_sF1QV, ipv3_sF1RB] (# State#
+                                                            s_X5KQ3,
+                                                          SmallMutableArray#
+                                                            s_X5KQ3 (HashMap String v_X5KPY) #)
+StgCase s'_sF1RG Prim State#
+StgOpApp writeSmallArray# [ipv6_sF1RF, i#_sF1R3, ipv4_sF1RC,
+                           ipv5_sF1RE] State# s_X5KQ3
+StgCase ds7_sF1RH UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv6_sF1RF, s'_sF1RG] (# State#
+                                                             s_X5KQ3,
+                                                           SmallArray# (HashMap String v_X5KPY) #)
+StgLet sat_sF1RK
+StgConApp (#,#) [ipv9_sF1RI, sat_sF1RK]
+StgCase wild1_sF1RL Prim Int#
+StgOpApp sizeofSmallArray# [sc5_sF1QV] Int#
+StgCase sat_sF1RM Prim Int#
+StgOpApp +# [wild1_sF1RL, 1] Int#
+StgCase ds_sF1RN UbxTup 2
+StgOpApp newSmallArray# [sat_sF1RM, undefinedElem,
+                         sc6_sF1QW] (# State# s_X5KQ3,
+                                       SmallMutableArray# s_X5KQ3 (HashMap String v_X5KPY) #)
+StgCase sat_sF1RR Prim Word#
+StgOpApp minusWord# [a1_sF1QY, __word 1] Word#
+StgCase sat_sF1RS Prim Word#
+StgOpApp and# [sc4_sF1QU, sat_sF1RR] Word#
+StgCase sat_sF1RT Prim Word#
+StgOpApp popCnt# [sat_sF1RS] Word#
+StgCase a2_sF1RQ Prim Int#
+StgOpApp word2Int# [sat_sF1RT] Int#
+StgCase s2_sF1RU Prim State#
+StgOpApp copySmallArray# [sc5_sF1QV, 0, ipv1_sF1RP, 0, a2_sF1RQ,
+                          ipv_sF1RO] State# s_X5KQ3
+StgLet sat_sF1RV
+StgCase s'_sF1RW Prim State#
+StgOpApp writeSmallArray# [ipv1_sF1RP, a2_sF1RQ, sat_sF1RV,
+                           s2_sF1RU] State# s_X5KQ3
+StgCase sat_sF1RY Prim Int#
+StgOpApp -# [wild1_sF1RL, a2_sF1RQ] Int#
+StgCase sat_sF1RX Prim Int#
+StgOpApp +# [a2_sF1RQ, 1] Int#
+StgCase s1_sF1RZ Prim State#
+StgOpApp copySmallArray# [sc5_sF1QV, a2_sF1RQ, ipv1_sF1RP,
+                          sat_sF1RX, sat_sF1RY, s'_sF1RW] State# s_X5KQ3
+StgCase ds4_sF1S0 UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv1_sF1RP, s1_sF1RZ] (# State#
+                                                             s_X5KQ3,
+                                                           SmallArray# (HashMap String v_X5KPY) #)
+StgCase wild2_sF1S3 Prim Word#
+StgOpApp or# [sc4_sF1QU, a1_sF1QY] Word#
+StgLet sat_sF1S4
+StgConApp (#,#) [ipv8_sF1S1, sat_sF1S4]
+StgLet sat_sF1S5
+StgConApp (#,#) [ipv8_sF1S1, sat_sF1S5]
+creating new closure...$wa
+StgCase k2_sF1SC Alg []
+StgApp w_sF1S7 []
+cgIdApp: EnterIt
+StgCase wild_sF1SD Alg HashMap
+StgApp w2_sF1SA []
+cgIdApp: EnterIt
+StgLet sat_sF1SE
+StgConApp (#,#) [w3_sF1SB, sat_sF1SE]
+StgCase sat_sF1SI Prim Word#
+StgOpApp uncheckedShiftRL# [ww_sF1S6, ww1_sF1S9] Word#
+StgCase sat_sF1SJ Prim Word#
+StgOpApp and# [sat_sF1SI, __word 15] Word#
+StgCase sat_sF1SK Prim Int#
+StgOpApp word2Int# [sat_sF1SJ] Int#
+StgCase a1_sF1SH Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1SK] Word#
+StgCase wild1_sF1SL Prim Word#
+StgOpApp and# [dt_sF1SF, a1_sF1SH] Word#
+StgCase sat_sF1SN Prim Word#
+StgOpApp minusWord# [a1_sF1SH, __word 1] Word#
+StgCase sat_sF1SO Prim Word#
+StgOpApp and# [dt_sF1SF, sat_sF1SN] Word#
+StgCase sat_sF1SP Prim Word#
+StgOpApp popCnt# [sat_sF1SO] Word#
+StgCase i#_sF1SM Prim Int#
+StgOpApp word2Int# [sat_sF1SP] Int#
+StgCase ds3_sF1SQ UbxTup 1
+StgOpApp indexSmallArray# [dt1_sF1SG, i#_sF1SM] (# HashMap
+                                                     String v_X5KPY #)
+StgCase sat_sF1SS Prim Int#
+StgOpApp +# [ww1_sF1S9, 4] Int#
+StgCase ds4_sF1ST UbxTup 2
+StgApp $wa [ww_sF1S6, k2_sF1SC, w1_sF1S8, sat_sF1SS, ipv2_sF1SR,
+            w3_sF1SB]
+cgIdApp: DirectEntry
+StgCase ds5_sF1SW UbxTup 2
+StgOpApp unsafeThawSmallArray# [dt1_sF1SG, ipv3_sF1SU] (# State#
+                                                            s_X5KQ3,
+                                                          SmallMutableArray#
+                                                            s_X5KQ3 (HashMap String v_X5KPY) #)
+StgCase s'_sF1SZ Prim State#
+StgOpApp writeSmallArray# [ipv6_sF1SY, i#_sF1SM, ipv4_sF1SV,
+                           ipv5_sF1SX] State# s_X5KQ3
+StgCase ds7_sF1T0 UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv6_sF1SY, s'_sF1SZ] (# State#
+                                                             s_X5KQ3,
+                                                           SmallArray# (HashMap String v_X5KPY) #)
+StgConApp (#,#) [ipv9_sF1T1, wild_sF1SD]
+StgCase wild2_sF1T3 Prim Int#
+StgOpApp sizeofSmallArray# [dt1_sF1SG] Int#
+StgCase sat_sF1T4 Prim Int#
+StgOpApp +# [wild2_sF1T3, 1] Int#
+StgCase ds_sF1T5 UbxTup 2
+StgOpApp newSmallArray# [sat_sF1T4, undefinedElem,
+                         w3_sF1SB] (# State# s_X5KQ3,
+                                      SmallMutableArray# s_X5KQ3 (HashMap String v_X5KPY) #)
+StgCase sat_sF1T9 Prim Word#
+StgOpApp minusWord# [a1_sF1SH, __word 1] Word#
+StgCase sat_sF1TA Prim Word#
+StgOpApp and# [dt_sF1SF, sat_sF1T9] Word#
+StgCase sat_sF1TB Prim Word#
+StgOpApp popCnt# [sat_sF1TA] Word#
+StgCase a2_sF1T8 Prim Int#
+StgOpApp word2Int# [sat_sF1TB] Int#
+StgCase s2_sF1TC Prim State#
+StgOpApp copySmallArray# [dt1_sF1SG, 0, ipv1_sF1T7, 0, a2_sF1T8,
+                          ipv_sF1T6] State# s_X5KQ3
+StgLet sat_sF1TD
+StgCase s'_sF1TE Prim State#
+StgOpApp writeSmallArray# [ipv1_sF1T7, a2_sF1T8, sat_sF1TD,
+                           s2_sF1TC] State# s_X5KQ3
+StgCase sat_sF1TG Prim Int#
+StgOpApp -# [wild2_sF1T3, a2_sF1T8] Int#
+StgCase sat_sF1TF Prim Int#
+StgOpApp +# [a2_sF1T8, 1] Int#
+StgCase s1_sF1TH Prim State#
+StgOpApp copySmallArray# [dt1_sF1SG, a2_sF1T8, ipv1_sF1T7,
+                          sat_sF1TF, sat_sF1TG, s'_sF1TE] State# s_X5KQ3
+StgCase ds4_sF1TI UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv1_sF1T7, s1_sF1TH] (# State#
+                                                             s_X5KQ3,
+                                                           SmallArray# (HashMap String v_X5KPY) #)
+StgCase wild3_sF1TL Prim Word#
+StgOpApp or# [dt_sF1SF, a1_sF1SH] Word#
+StgLet sat_sF1TM
+StgConApp (#,#) [ipv8_sF1TJ, sat_sF1TM]
+StgLet sat_sF1TN
+StgConApp (#,#) [ipv8_sF1TJ, sat_sF1TN]
+StgCase lwild_sF1TR Prim Int#
+StgApp $wa1_rF1JX [ww1_sF1S9, ww_sF1S6, k2_sF1SC, w1_sF1S8,
+                   dt_sF1TO, dt1_sF1TP, dt2_sF1TQ, w3_sF1SB]
+cgIdApp: DirectEntry
+StgCase wild2_sF1TS Alg Bool
+StgApp eqString [dt1_sF1TP, k2_sF1SC]
+cgIdApp: DirectEntry
+StgLet sat_sF1TT
+StgCase ds3_sF1TU UbxTup 2
+StgOpApp newSmallArray# [2, sat_sF1TT, realWorld#] (# State#
+                                                        RealWorld,
+                                                      SmallMutableArray#
+                                                        RealWorld (Leaf String v_X5KPY) #)
+StgLet sat_sF1TX
+StgCase s'_sF1TY Prim State#
+StgOpApp writeSmallArray# [ipv3_sF1TW, 1, sat_sF1TX,
+                           ipv2_sF1TV] State# RealWorld
+StgCase ds_sF1TZ UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv3_sF1TW, s'_sF1TY] (# State#
+                                                             RealWorld,
+                                                           SmallArray# (Leaf String v_X5KPY) #)
+StgLet sat_sF1U2
+StgConApp (#,#) [w3_sF1SB, sat_sF1U2]
+StgCase wild3_sF1U3 Prim Int#
+StgLet sat_sF1U4
+StgConApp (#,#) [w3_sF1SB, sat_sF1U4]
+StgConApp (#,#) [w3_sF1SB, wild_sF1SD]
+StgCase sat_sF1U7 Prim Word#
+StgOpApp uncheckedShiftRL# [ww_sF1S6, ww1_sF1S9] Word#
+StgCase sat_sF1U8 Prim Word#
+StgOpApp and# [sat_sF1U7, __word 15] Word#
+StgCase i#_sF1U6 Prim Int#
+StgOpApp word2Int# [sat_sF1U8] Int#
+StgCase ds3_sF1U9 UbxTup 1
+StgOpApp indexSmallArray# [dt_sF1U5, i#_sF1U6] (# HashMap
+                                                    String v_X5KPY #)
+StgCase sat_sF1UB Prim Int#
+StgOpApp +# [ww1_sF1S9, 4] Int#
+StgCase ds4_sF1UC UbxTup 2
+StgApp $wa [ww_sF1S6, k2_sF1SC, w1_sF1S8, sat_sF1UB, ipv2_sF1UA,
+            w3_sF1SB]
+cgIdApp: DirectEntry
+StgCase ds5_sF1UF UbxTup 2
+StgOpApp unsafeThawSmallArray# [dt_sF1U5, ipv3_sF1UD] (# State#
+                                                           s_X5KQ3,
+                                                         SmallMutableArray#
+                                                           s_X5KQ3 (HashMap String v_X5KPY) #)
+StgCase s'_sF1UI Prim State#
+StgOpApp writeSmallArray# [ipv6_sF1UH, i#_sF1U6, ipv4_sF1UE,
+                           ipv5_sF1UG] State# s_X5KQ3
+StgCase ds7_sF1UJ UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv6_sF1UH, s'_sF1UI] (# State#
+                                                             s_X5KQ3,
+                                                           SmallArray# (HashMap String v_X5KPY) #)
+StgConApp (#,#) [ipv9_sF1UK, wild_sF1SD]
+StgCase lwild_sF1UO Prim Int#
+StgCase ds3_sF1UP UbxTup 2
+StgOpApp newSmallArray# [1, wild_sF1SD, realWorld#] (# State#
+                                                         RealWorld,
+                                                       SmallMutableArray#
+                                                         RealWorld (HashMap String v_X5KPY) #)
+StgCase ds4_sF1US UbxTup 2
+StgOpApp unsafeFreezeSmallArray# [ipv3_sF1UR, ipv2_sF1UQ] (# State#
+                                                               RealWorld,
+                                                             SmallArray# (HashMap String v_X5KPY) #)
+StgCase sat_sF1UV Prim Word#
+StgOpApp uncheckedShiftRL# [dt_sF1UM, ww1_sF1S9] Word#
+StgCase sat_sF1UW Prim Word#
+StgOpApp and# [sat_sF1UV, __word 15] Word#
+StgCase sat_sF1UX Prim Int#
+StgOpApp word2Int# [sat_sF1UW] Int#
+StgCase sat_sF1UY Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1UX] Word#
+StgApp $sunsafeInsert_$s$wa [ww_sF1S6, k2_sF1SC, w1_sF1S8,
+                             ww1_sF1S9, sat_sF1UY, ipv5_sF1UU, w3_sF1SB]
+cgIdApp: DirectEntry
+StgCase ww2_sF1UZ Prim SmallArray#
+StgApp $s$wupdateOrSnocWithKey [lvl11_rF1KB, k2_sF1SC, w1_sF1S8,
+                                dt1_sF1UN]
+cgIdApp: DirectEntry
+StgLet sat_sF1V0
+StgConApp (#,#) [w3_sF1SB, sat_sF1V0]
+generating  $sunsafeInsert
+creating new closure...$sunsafeInsert
+StgCase ww_sF1V4 UbxTup 2
+StgApp $wgo5 [k0_sF1V1, 142591788, 0]
+cgIdApp: DirectEntry
+StgCase sat_sF1V7 Prim Int#
+StgOpApp *# [ww1_sF1V5, 16777619] Int#
+StgCase sat_sF1V8 Prim Int#
+StgOpApp xorI# [sat_sF1V7, ww2_sF1V6] Int#
+StgCase sat_sF1V9 Prim Word#
+StgOpApp int2Word# [sat_sF1V8] Word#
+StgCase ds_sF1VA UbxTup 2
+StgApp $wa [sat_sF1V9, k0_sF1V1, v0_sF1V2, 0, m0_sF1V3, realWorld#]
+cgIdApp: DirectEntry
+StgApp ipv1_sF1VC []
+cgIdApp: EnterIt
+generating (rec) [$wpoly_go1]
+creating new closure...$wpoly_go1
+StgCase ds5_sF1VH Alg []
+StgApp w_sF1VE []
+cgIdApp: EnterIt
+StgCase wild_sF1VI Alg HashMap
+StgApp w1_sF1VG []
+cgIdApp: EnterIt
+StgConApp Nothing []
+StgCase sat_sF1VM Prim Word#
+StgOpApp uncheckedShiftRL# [ww_sF1VD, ww1_sF1VF] Word#
+StgCase sat_sF1VN Prim Word#
+StgOpApp and# [sat_sF1VM, __word 15] Word#
+StgCase sat_sF1VO Prim Int#
+StgOpApp word2Int# [sat_sF1VN] Int#
+StgCase a1_sF1VL Prim Word#
+StgOpApp uncheckedShiftL# [__word 1, sat_sF1VO] Word#
+StgCase wild1_sF1VP Prim Word#
+StgOpApp and# [dt_sF1VJ, a1_sF1VL] Word#
+StgCase sat_sF1VQ Prim Word#
+StgOpApp minusWord# [a1_sF1VL, __word 1] Word#
+StgCase sat_sF1VR Prim Word#
+StgOpApp and# [dt_sF1VJ, sat_sF1VQ] Word#
+StgCase sat_sF1VS Prim Word#
+StgOpApp popCnt# [sat_sF1VR] Word#
+StgCase sat_sF1VT Prim Int#
+StgOpApp word2Int# [sat_sF1VS] Int#
+StgCase ds7_sF1VU UbxTup 1
+StgOpApp indexSmallArray# [dt1_sF1VK, sat_sF1VT] (# HashMap
+                                                      String v_X1CRK #)
+StgCase sat_sF1VW Prim Int#
+StgOpApp +# [ww1_sF1VF, 4] Int#
+StgApp $wpoly_go1 [ww_sF1VD, ds5_sF1VH, sat_sF1VW, ipv2_sF1VV]
+cgIdApp: JumpToIt
+StgConApp Nothing []
+StgCase lwild_sF1W0 Prim Int#
+StgConApp Nothing []
+StgCase wild1_sF1W1 Alg Bool
+StgApp eqString [ds5_sF1VH, dt1_sF1VY]
+cgIdApp: DirectEntry
+StgConApp Nothing []
+StgConApp Just [dt2_sF1VZ]
+StgCase sat_sF1W3 Prim Word#
+StgOpApp uncheckedShiftRL# [ww_sF1VD, ww1_sF1VF] Word#
+StgCase sat_sF1W4 Prim Word#
+StgOpApp and# [sat_sF1W3, __word 15] Word#
+StgCase sat_sF1W5 Prim Int#
+StgOpApp word2Int# [sat_sF1W4] Int#
+StgCase ds7_sF1W6 UbxTup 1
+StgOpApp indexSmallArray# [dt_sF1W2, sat_sF1W5] (# HashMap
+                                                     String v_X1CRK #)
+StgCase sat_sF1W8 Prim Int#
+StgOpApp +# [ww1_sF1VF, 4] Int#
+StgApp $wpoly_go1 [ww_sF1VD, ds5_sF1VH, sat_sF1W8, ipv2_sF1W7]
+cgIdApp: JumpToIt
+StgCase lwild_sF1WB Prim Int#
+StgConApp Nothing []
+StgCase sat_sF1WC Prim Int#
+StgOpApp sizeofSmallArray# [dt1_sF1WA] Int#
+StgApp $wpoly_go [ds5_sF1VH, dt1_sF1WA, 0, sat_sF1WC]
+cgIdApp: DirectEntry
+generating  $slookup
+creating new closure...$slookup
+StgCase ww_sF1WF UbxTup 2
+StgApp $wgo5 [k0_sF1WD, 142591788, 0]
+cgIdApp: DirectEntry
+StgCase sat_sF1WI Prim Int#
+StgOpApp *# [ww1_sF1WG, 16777619] Int#
+StgCase sat_sF1WJ Prim Int#
+StgOpApp xorI# [sat_sF1WI, ww2_sF1WH] Int#
+StgCase sat_sF1WK Prim Word#
+StgOpApp int2Word# [sat_sF1WJ] Word#
+StgApp $wpoly_go1 [sat_sF1WK, k0_sF1WD, 0, m0_sF1WE]
+cgIdApp: DirectEntry
+generating (rec) [$s$wgo1_rF1KC]
+creating new closure...$LrF1KC$s$wgo1
+StgCase lwild_sF1WQ Prim Int#
+StgCase ds1_sF1WR UbxTup 1
+StgOpApp indexSmallArray# [sc_sF1WL, sc2_sF1WN] (# Leaf
+                                                     ByteString ByteString #)
+StgCase wild4_sF1WT Alg Leaf
+StgApp ipv_sF1WS []
+cgIdApp: EnterIt
+StgCase ww_sF1WW Alg ByteString
+StgApp k1_sF1WU []
+cgIdApp: EnterIt
+StgCase wild_sF1X1 Alg HashMap
+StgApp sc4_sF1WP []
+cgIdApp: EnterIt
+StgTick, tickish: readConfigFileWithEnv <src/Development/Shake/Config.hs:56:52-64>
+Emitting line number: 56
+StgLet sat_sF1XA
+creating new closure...sat_sF1XA
+Free variables  v1_sF1WV,ww1_sF1WX,ww2_sF1WY,ww3_sF1WZ,ww4_sF1X0,wild_sF1X1
+StgCase ww7_sF1X3 Alg ByteString
+StgApp v1_sF1WV []
+cgIdApp: EnterIt
+StgCase v2_sF1X8 Alg []
+StgApp $wfoldr [:, [], ww8_sF1X4, ww9_sF1X5, ww10_sF1X6,
+                ww11_sF1X7]
+cgIdApp: DirectEntry
+StgTick, tickish: readConfigFileWithEnv <src/Development/Shake/Config.hs:56:34-46>
+Emitting line number: 56
+StgCase sat_sF1X9 Alg []
+StgApp $wfoldr [:, [], ww1_sF1WX, ww2_sF1WY, ww3_sF1WZ, ww4_sF1X0]
+cgIdApp: DirectEntry
+StgApp $sunsafeInsert [sat_sF1X9, v2_sF1X8, wild_sF1X1]
+cgIdApp: DirectEntry
+StgCase sat_sF1X2 Prim Int#
+StgOpApp +# [sc2_sF1WN, 1] Int#
+StgApp $s$wgo1_rF1KC [sc_sF1WL, sc1_sF1WM, sat_sF1X2, sc3_sF1WO,
+                      sat_sF1XA]
+cgIdApp: JumpToIt
+StgApp sc3_sF1WO [sc4_sF1WP]
+cgIdApp: SlowCall
+generating (rec) [$s$wgo2_rF1KD, $s$wgo3_rF1KE, readConfigFile_go]
+Found mutually recursive group [ 0 ]: [readConfigFile_go,
+                                       $LrF1KD$s$wgo2, $LrF1KE$s$wgo3]
+creating new closure...$LrF1KD$s$wgo2
+creating new closure...$LrF1KE$s$wgo3
+creating new closure...readConfigFile_go
+Generating (mutually recursive) readConfigFile_go
+StgCase wild_sF1XY Alg HashMap
+StgApp ds_sF1XW []
+cgIdApp: EnterIt
+StgApp z1_sF1XV [eta_sF1XX]
+cgIdApp: SlowCall
+StgCase sat_sF1Y1 Prim Int#
+StgOpApp sizeofSmallArray# [dt1_sF1Y0] Int#
+StgApp $s$wgo2_rF1KD [dt1_sF1Y0, sat_sF1Y1, 0, z1_sF1XV, eta_sF1XX]
+cgIdApp: JumpToIt

@@ -13,7 +13,7 @@ import Foreign.C.Types
 import Foreign.C.String
 #else
 import System.IO
-import System.Posix.IO
+-- import System.Posix.IO
 #endif
 
 #ifdef mingw32_HOST_OS
@@ -56,21 +56,22 @@ withLockFile file act = withCWString file $ \cfile -> do
 
 #else
 
-withLockFile file act = do
-    createDirectoryRecursive $ takeDirectory file
-    tryIO $ writeFile file ""
+withLockFile _file act = act
+    -- TODO: Implement file locking
+    -- createDirectoryRecursive $ takeDirectory file
+    -- tryIO $ writeFile file ""
 
-    bracket (openFd file ReadWrite Nothing defaultFileFlags) closeFd $ \fd -> do
-        let lock = (WriteLock, AbsoluteSeek, 0, 0)
-        res <- tryIO $ setLock fd lock
-        case res of
-            Right () -> act
-            Left e -> do
-                res <- getLock fd lock
-                errorIO $ "Shake failed to acquire a file lock on " ++ file ++ "\n" ++
-                          (case res of
-                               Nothing -> ""
-                               Just (pid, _) -> "Shake process ID " ++ show pid ++ " is using this lock.\n") ++
-                          show e
+    -- bracket (openFd file ReadWrite Nothing defaultFileFlags) closeFd $ \fd -> do
+    --     let lock = (WriteLock, AbsoluteSeek, 0, 0)
+    --     res <- tryIO $ setLock fd lock
+    --     case res of
+    --         Right () -> act
+    --         Left e -> do
+    --             res <- getLock fd lock
+    --             errorIO $ "Shake failed to acquire a file lock on " ++ file ++ "\n" ++
+    --                       (case res of
+    --                            Nothing -> ""
+    --                            Just (pid, _) -> "Shake process ID " ++ show pid ++ " is using this lock.\n") ++
+    --                       show e
 
 #endif
